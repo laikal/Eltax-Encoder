@@ -1,0 +1,26 @@
+UltraSharpV2 — DAT2 4×
+
+Model ID: dat2-ultrasharpv2-4x
+Creator / attribution: kim2091
+Architecture: DAT architecture; embedDim 180; 6 residual groups; two-stage 2× PixelShuffle
+License: CC BY-NC-SA 4.0 (pinned source model metadata; license text included).
+License evidence: The pinned source revision and source checkpoint hash are recorded with the official license text. Attribution, NonCommercial, and ShareAlike conditions are retained for the DAT2 conversion.
+Final distribution status: CONDITIONAL
+Upstream: https://huggingface.co/Kim2091/UltraSharpV2/tree/2d1db39ff692c111da92112d49f833e4ad7035ae
+Source revision: 2d1db39ff692c111da92112d49f833e4ad7035ae
+Original filename: 4x-UltraSharpV2.safetensors
+Original SHA-256: 2B5DB674AA8F3864A696DCCD1D07D7CC0500FBF220F35044CD30EEE9A7F971A7
+Converted: Yes
+Conversion: Converted from source checkpoint to DAT2 archive format by the project's documented conversion path; no ownership of original weights is claimed.
+Source notes:
+  - Original checkpoint: 4x-UltraSharpV2.safetensors.
+  - Original SHA-256: 2B5DB674AA8F3864A696DCCD1D07D7CC0500FBF220F35044CD30EEE9A7F971A7.
+  - Original license URL: https://creativecommons.org/licenses/by-nc-sa/4.0/.
+Bundled artifacts:
+  Models/Upscalers/DAT2/UltraSharpV2_DAT2_4x.dat2wts  SHA-256 9e4630cf0f761a2a731ffb7f6b705005b786fedd01c86a78e0892c5acd436959
+License / notice files:
+  Licenses/Models/DAT2/UltraSharpV2-MODEL-NOTICE.txt
+  Licenses/Models/CC-BY-NC-SA-4.0/legalcode.html
+
+No ownership of upstream model weights is claimed by ELTAX. The software license is not treated as an automatic license grant for model weights.
+Distribution remains subject to the model license conditions stated above. The stated 0.70C distribution plan is free and has no sale, advertising, subscription, or paid feature.

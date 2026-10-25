@@ -1,0 +1,267 @@
+ELTAX Encoder 0.70C — Model Notices and Exact Artifact Inventory
+Model rights status synchronized to MODEL_RIGHTS_FINAL_MATRIX.md and MODEL_REDISTRIBUTION_PRECEDENTS.md.
+L4: CLOSED WITH REASONABLE DUE DILIGENCE.
+L5: CLOSED WITH DECLARED CONDITIONS.
+Models included: 9; CONDITIONAL: 5; REASONABLE_DUE_DILIGENCE_PASS: 4; models excluded: 0.
+This practical assessment is not legal advice. Code licenses are not automatically applied to model weights.
+
+Real-CUGAN SE 2x (five weight variants)
+
+Model ID: cugan-se-2x
+Creator / attribution: bilibili/ailab (upstream project; weight rights holder not separately confirmed)
+Architecture: UpCunet2x / RGB; five denoise-strength variants
+License: Model-weight terms are not separately stated in the pinned evidence; the Real-CUGAN software MIT license is not asserted to cover the weights.
+License evidence: The pinned upstream repository MIT license is for code. No separate weight grant was located. Official model publication and NCNN package distribution precedent are recorded; no explicit redistribution prohibition was found.
+Final distribution status: REASONABLE_DUE_DILIGENCE_PASS
+Upstream: https://github.com/bilibili/ailab/tree/main/Real-CUGAN
+Source revision: 395302c5c70f1bff604c974e92e0a87e45c9f9ee
+Original filename: not recorded in pinned package metadata
+Original SHA-256: not available in pinned package metadata
+Converted: No
+Conversion: Packaged in upstream NCNN param/bin format; no ELTAX model conversion was performed or claimed.
+Source notes:
+  - Engine package/model context: https://github.com/nihui/realcugan-ncnn-vulkan/tree/395302c5c70f1bff604c974e92e0a87e45c9f9ee
+  - The pinned engine commit exposes the NCNN model files; a separate license statement for weights was not located.
+Bundled artifacts:
+  Models/Upscalers/RealCUGAN/models-se/up2x-conservative.bin  SHA-256 91c72c136e7ff8556323d4449c5ceeff22d9829bf8463a01137cadb8d59b84a0
+  Models/Upscalers/RealCUGAN/models-se/up2x-conservative.param  SHA-256 91efac7489bf249f092faa3764e3a3d1d31ef290051e39f2afd2138c98ccce30
+  Models/Upscalers/RealCUGAN/models-se/up2x-denoise1x.bin  SHA-256 09373c4fddfd2a57fb4af5e516eba1b4c9caa132fd52ffd01bcaefee543bf7f6
+  Models/Upscalers/RealCUGAN/models-se/up2x-denoise1x.param  SHA-256 91efac7489bf249f092faa3764e3a3d1d31ef290051e39f2afd2138c98ccce30
+  Models/Upscalers/RealCUGAN/models-se/up2x-denoise2x.bin  SHA-256 47427a52badebfbd7bb6db97196a2844c553f7f2bb93c9527b26347bea0430e7
+  Models/Upscalers/RealCUGAN/models-se/up2x-denoise2x.param  SHA-256 91efac7489bf249f092faa3764e3a3d1d31ef290051e39f2afd2138c98ccce30
+  Models/Upscalers/RealCUGAN/models-se/up2x-denoise3x.bin  SHA-256 610ebae63f388fe6f39615cc5f4eaeb038d5aa6ba8b299ba3b989f7f7a1a280a
+  Models/Upscalers/RealCUGAN/models-se/up2x-denoise3x.param  SHA-256 91efac7489bf249f092faa3764e3a3d1d31ef290051e39f2afd2138c98ccce30
+  Models/Upscalers/RealCUGAN/models-se/up2x-no-denoise.bin  SHA-256 7f135a712830b16678cb8247b9517308c5f3858fca9b10e1c3ad5ef6e261de0c
+  Models/Upscalers/RealCUGAN/models-se/up2x-no-denoise.param  SHA-256 91efac7489bf249f092faa3764e3a3d1d31ef290051e39f2afd2138c98ccce30
+License / notice files:
+  Licenses/Models/RealCUGAN/MODEL_NOTICE.txt
+  Licenses/Software/RealCUGAN/BILIBILI-REPOSITORY-MIT-LICENSE.txt
+
+No ownership of upstream model weights is claimed by ELTAX. The software license is not treated as an automatic license grant for model weights.
+The reasonable due diligence assessment is recorded in the accompanying final model-rights matrix; it is not a legal opinion or a guarantee of rights.
+
+Real-ESRGAN x4plus
+
+Model ID: esrgan-x4plus
+Creator / attribution: Xintao Wang and Real-ESRGAN contributors
+Architecture: RRDBNet 64nf 23nb RGB
+License: Pretrained weight terms are not separately stated in the cited official sources; BSD-3-Clause applies to code and is not asserted for weights.
+License evidence: The official checkpoint source and code license are recorded separately. Official model publication and NCNN portable-package distribution precedent are documented; no explicit redistribution prohibition was found. Exact conversion provenance remains limited.
+Final distribution status: REASONABLE_DUE_DILIGENCE_PASS
+Upstream: https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth
+Source revision: v0.1.0 checkpoint / v0.2.0 NCNN wrapper
+Original filename: RealESRGAN_x4plus.pth
+Original SHA-256: not available in pinned package metadata
+Converted: Yes
+Conversion: Upstream-provided NCNN param/bin export; precise conversion tool/revision not established in current records.
+Source notes:
+  - Model project: https://github.com/xinntao/Real-ESRGAN
+  - NCNN model source package metadata: https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan/tree/37026f49824c5cf84062e7c6a5dd71445dcf610f
+  - The bundled .param/.bin export is not byte-identical to the .pth checkpoint; an exact conversion build record is not in the package.
+Bundled artifacts:
+  Models/Upscalers/RealESRGAN/models/realesrgan-x4plus.param  SHA-256 35330ececcea33b6c397a72548e788d5d53becee4734c50b7fada36e89f10a86
+  Models/Upscalers/RealESRGAN/models/realesrgan-x4plus.bin  SHA-256 713ee713b0353afaa27976f0563a64a5043bd70b9bd8936c2e26e25ebcdbcddf
+License / notice files:
+  Licenses/Models/RealESRGAN/X4PLUS-MODEL-NOTICE.txt
+  Licenses/Software/RealESRGAN/UPSTREAM-CODE-BSD-3-CLAUSE-LICENSE.txt
+
+No ownership of upstream model weights is claimed by ELTAX. The software license is not treated as an automatic license grant for model weights.
+The reasonable due diligence assessment is recorded in the accompanying final model-rights matrix; it is not a legal opinion or a guarantee of rights.
+
+Real-ESRGAN x4plus anime 6B
+
+Model ID: esrgan-anime-6b
+Creator / attribution: Xintao Wang and Real-ESRGAN contributors
+Architecture: RRDBNet 64nf 6nb RGB
+License: Pretrained weight terms are not separately stated in the cited official sources; BSD-3-Clause applies to code and is not asserted for weights.
+License evidence: The official checkpoint source and code license are recorded separately. Official model publication and NCNN portable-package distribution precedent are documented; no explicit redistribution prohibition was found. Exact conversion provenance remains limited.
+Final distribution status: REASONABLE_DUE_DILIGENCE_PASS
+Upstream: https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.2.4/RealESRGAN_x4plus_anime_6B.pth
+Source revision: v0.2.2.4 checkpoint / v0.2.0 NCNN wrapper
+Original filename: RealESRGAN_x4plus_anime_6B.pth
+Original SHA-256: not available in pinned package metadata
+Converted: Yes
+Conversion: Upstream-provided NCNN param/bin export; precise conversion tool/revision not established in current records.
+Source notes:
+  - Model project: https://github.com/xinntao/Real-ESRGAN
+  - NCNN model source package metadata: https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan/tree/37026f49824c5cf84062e7c6a5dd71445dcf610f
+  - The bundled .param/.bin export is not byte-identical to the .pth checkpoint; an exact conversion build record is not in the package.
+Bundled artifacts:
+  Models/Upscalers/RealESRGAN/models/realesrgan-x4plus-anime.param  SHA-256 2b8fb6e0ae4d2d85704ca08c119a2f5ea40add4f2ecd512eb7f4cd44b6127ed4
+  Models/Upscalers/RealESRGAN/models/realesrgan-x4plus-anime.bin  SHA-256 fe01c269cfd10cdef8e018ab66ebe750cf79c7af4d1f9c16c737e1295229bacc
+License / notice files:
+  Licenses/Models/RealESRGAN/ANIME6B-MODEL-NOTICE.txt
+  Licenses/Software/RealESRGAN/UPSTREAM-CODE-BSD-3-CLAUSE-LICENSE.txt
+
+No ownership of upstream model weights is claimed by ELTAX. The software license is not treated as an automatic license grant for model weights.
+The reasonable due diligence assessment is recorded in the accompanying final model-rights matrix; it is not a legal opinion or a guarantee of rights.
+
+NMKD YandereNeo XL
+
+Model ID: custom-yandere-xl
+Creator / attribution: nmkd (as identified by pinned OpenModelDB metadata)
+Architecture: ESRGAN/RRDBNet 64nf 23nb RGB
+License: WTFPL is listed in pinned OpenModelDB community metadata; a creator-authored weight license was not independently confirmed.
+License evidence: Pinned OpenModelDB metadata declares WTFPL and records the source checkpoint SHA. This is community metadata, not a rights-holder-authored statement. A public mirror has the same checkpoint hash; no explicit redistribution prohibition was found.
+Final distribution status: REASONABLE_DUE_DILIGENCE_PASS
+Upstream: https://icedrive.net/1/f0UAiRqz3N
+Source revision: OpenModelDB commit 782aac088bd83dd3fc438a42eb0c3868dc559110
+Original filename: not recorded in pinned package metadata
+Original SHA-256: ddcb5856b948654b6298fd50ed90a461eff8442d298779c23724a8c0e7bbbab1
+Converted: Yes
+Conversion: Converted to NCNN param/bin by chaiNNer revision 46a3051ba4ef2bc5feb5f0f4ee929649a3e3764b.
+Source notes:
+  - OpenModelDB record: https://openmodeldb.info/models/4x-NMKD-YandereNeo-XL
+  - Pinned metadata: https://raw.githubusercontent.com/OpenModelDB/open-model-database/782aac088bd83dd3fc438a42eb0c3868dc559110/data/models/4x-NMKD-YandereNeo-XL.json
+  - Source checkpoint SHA-256: ddcb5856b948654b6298fd50ed90a461eff8442d298779c23724a8c0e7bbbab1.
+Bundled artifacts:
+  Models/Upscalers/RealESRGAN/models/custom-yandere-xl/model.param  SHA-256 688db072378f3602dc60230b8ed8e726ef0e87f72165750ad628d4227c41012f
+  Models/Upscalers/RealESRGAN/models/custom-yandere-xl/model.bin  SHA-256 23ef7bf838946b52f0fff23191a56238e475f73a594d3a20510045cac0201750
+License / notice files:
+  Licenses/Models/NMKDYandereNeo/MODEL_NOTICE.txt
+  Licenses/Models/WTFPL/COPYING
+
+No ownership of upstream model weights is claimed by ELTAX. The software license is not treated as an automatic license grant for model weights.
+The reasonable due diligence assessment is recorded in the accompanying final model-rights matrix; it is not a legal opinion or a guarantee of rights.
+
+UltraSharp ESRGAN
+
+Model ID: custom-ultrasharp
+Creator / attribution: kim2091 (as identified by pinned OpenModelDB metadata)
+Architecture: ESRGAN/RRDBNet 64nf 23nb RGB
+License: CC BY-NC-SA 4.0 (declared by pinned model metadata; license text included).
+License evidence: Pinned OpenModelDB metadata identifies CC BY-NC-SA 4.0; the creator source and official license text are included. Attribution, NonCommercial, and ShareAlike conditions are retained for the converted model.
+Final distribution status: CONDITIONAL
+Upstream: https://mega.nz/folder/qZRBmaIY#nIG8KyWFcGNTuMX_XNbJ_g
+Source revision: OpenModelDB commit 782aac088bd83dd3fc438a42eb0c3868dc559110
+Original filename: not recorded in pinned package metadata
+Original SHA-256: a5812231fc936b42af08a5edba784195495d303d5b3248c24489ef0c4021fe01
+Converted: Yes
+Conversion: Converted to NCNN param/bin by chaiNNer revision 46a3051ba4ef2bc5feb5f0f4ee929649a3e3764b.
+Source notes:
+  - OpenModelDB record: https://openmodeldb.info/models/4x-UltraSharp
+  - Pinned metadata: https://raw.githubusercontent.com/OpenModelDB/open-model-database/782aac088bd83dd3fc438a42eb0c3868dc559110/data/models/4x-UltraSharp.json
+  - Source checkpoint SHA-256: a5812231fc936b42af08a5edba784195495d303d5b3248c24489ef0c4021fe01.
+  - License text: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en
+Bundled artifacts:
+  Models/Upscalers/RealESRGAN/models/custom-ultrasharp/model.param  SHA-256 688db072378f3602dc60230b8ed8e726ef0e87f72165750ad628d4227c41012f
+  Models/Upscalers/RealESRGAN/models/custom-ultrasharp/model.bin  SHA-256 1229d5ba0b9458a61954e2de722ce645665ad979ea196d159bc58f8b0f38c396
+License / notice files:
+  Licenses/Models/UltraSharpESRGAN/MODEL_NOTICE.txt
+  Licenses/Models/CC-BY-NC-SA-4.0/legalcode.html
+
+No ownership of upstream model weights is claimed by ELTAX. The software license is not treated as an automatic license grant for model weights.
+Distribution remains subject to the model license conditions stated above. The stated 0.70C distribution plan is free and has no sale, advertising, subscription, or paid feature.
+
+IllustrationJaNai V1 ESRGAN
+
+Model ID: custom-janai-v1
+Creator / attribution: the-database
+Architecture: ESRGAN/RRDBNet 64nf 23nb RGB
+License: CC BY-NC-SA 4.0 (license from the exact upstream tag; text included).
+License evidence: The exact upstream tag LICENSE and official CC legalcode are included. Attribution, NonCommercial, and ShareAlike conditions are retained for the converted model.
+Final distribution status: CONDITIONAL
+Upstream: https://github.com/the-database/MangaJaNai/tree/5e9db8e5a26ef9336d6bc6baeebbe3b3ac740963
+Source revision: 5e9db8e5a26ef9336d6bc6baeebbe3b3ac740963
+Original filename: 4x_IllustrationJaNai_V1_ESRGAN_135k.pth
+Original SHA-256: c67e76c4b5f0474d5116e5f3885202d1bee68187e1389f82bb90baace24152f8
+Converted: Yes
+Conversion: Converted to NCNN param/bin by chaiNNer revision 46a3051ba4ef2bc5feb5f0f4ee929649a3e3764b.
+Source notes:
+  - Original checkpoint: 4x_IllustrationJaNai_V1_ESRGAN_135k.pth.
+  - OpenModelDB record: https://openmodeldb.info/models/4x-IllustrationJaNai-V1-ESRGAN
+  - Original checkpoint SHA-256 from pinned metadata: c67e76c4b5f0474d5116e5f3885202d1bee68187e1389f82bb90baace24152f8.
+  - License text: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en
+Bundled artifacts:
+  Models/Upscalers/RealESRGAN/models/custom-janai-v1/model.param  SHA-256 688db072378f3602dc60230b8ed8e726ef0e87f72165750ad628d4227c41012f
+  Models/Upscalers/RealESRGAN/models/custom-janai-v1/model.bin  SHA-256 1d5f792cd58cf31213193467b0ab5f2ff9a2e3de63d3bf8caa8abe8eebe95df5
+License / notice files:
+  Licenses/Models/IllustrationJaNai-V1/MODEL_NOTICE.txt
+  Licenses/Models/IllustrationJaNai-V1/LICENSE
+  Licenses/Models/CC-BY-NC-SA-4.0/legalcode.html
+
+No ownership of upstream model weights is claimed by ELTAX. The software license is not treated as an automatic license grant for model weights.
+Distribution remains subject to the model license conditions stated above. The stated 0.70C distribution plan is free and has no sale, advertising, subscription, or paid feature.
+
+UltraSharpV2 — DAT2 4×
+
+Model ID: dat2-ultrasharpv2-4x
+Creator / attribution: kim2091
+Architecture: DAT architecture; embedDim 180; 6 residual groups; two-stage 2× PixelShuffle
+License: CC BY-NC-SA 4.0 (pinned source model metadata; license text included).
+License evidence: The pinned source revision and source checkpoint hash are recorded with the official license text. Attribution, NonCommercial, and ShareAlike conditions are retained for the DAT2 conversion.
+Final distribution status: CONDITIONAL
+Upstream: https://huggingface.co/Kim2091/UltraSharpV2/tree/2d1db39ff692c111da92112d49f833e4ad7035ae
+Source revision: 2d1db39ff692c111da92112d49f833e4ad7035ae
+Original filename: 4x-UltraSharpV2.safetensors
+Original SHA-256: 2B5DB674AA8F3864A696DCCD1D07D7CC0500FBF220F35044CD30EEE9A7F971A7
+Converted: Yes
+Conversion: Converted from source checkpoint to DAT2 archive format by the project's documented conversion path; no ownership of original weights is claimed.
+Source notes:
+  - Original checkpoint: 4x-UltraSharpV2.safetensors.
+  - Original SHA-256: 2B5DB674AA8F3864A696DCCD1D07D7CC0500FBF220F35044CD30EEE9A7F971A7.
+  - Original license URL: https://creativecommons.org/licenses/by-nc-sa/4.0/.
+Bundled artifacts:
+  Models/Upscalers/DAT2/UltraSharpV2_DAT2_4x.dat2wts  SHA-256 9e4630cf0f761a2a731ffb7f6b705005b786fedd01c86a78e0892c5acd436959
+License / notice files:
+  Licenses/Models/DAT2/UltraSharpV2-MODEL-NOTICE.txt
+  Licenses/Models/CC-BY-NC-SA-4.0/legalcode.html
+
+No ownership of upstream model weights is claimed by ELTAX. The software license is not treated as an automatic license grant for model weights.
+Distribution remains subject to the model license conditions stated above. The stated 0.70C distribution plan is free and has no sale, advertising, subscription, or paid feature.
+
+IllustrationJaNai V3 — DAT2 4×
+
+Model ID: dat2-illustrationjanai-v3detail-4x
+Creator / attribution: the-database
+Architecture: DAT architecture; embedDim 180; 6 residual groups; two-stage 2× PixelShuffle
+License: CC BY-NC 4.0 (exact V3 source tag; license text included).
+License evidence: The exact V3 source tag declares CC BY-NC 4.0 and its license text is included. Attribution, NonCommercial, and the BF16-checkpoint-to-DAT2 change are recorded. No ShareAlike condition is added.
+Final distribution status: CONDITIONAL
+Upstream: https://github.com/the-database/MangaJaNai/releases/tag/3.0.0
+Source revision: d2f8f92dc75303c557ca2d7a507913eff512ff32
+Original filename: 4x_IllustrationJaNai_V3detail_DAT2_28k_bf16.safetensors
+Original SHA-256: EB9FAF6A37DE81406765E0C99E76AD7DAFE67E4877F32E186085AC277A0E6181
+Converted: Yes
+Conversion: Converted from source checkpoint to DAT2 archive format by the project's documented conversion path; no ownership of original weights is claimed.
+Source notes:
+  - Original checkpoint: 4x_IllustrationJaNai_V3detail_DAT2_28k_bf16.safetensors.
+  - Original SHA-256: EB9FAF6A37DE81406765E0C99E76AD7DAFE67E4877F32E186085AC277A0E6181.
+  - Original license URL: https://creativecommons.org/licenses/by-nc/4.0/.
+Bundled artifacts:
+  Models/Upscalers/DAT2/IllustrationJaNai_V3detail_DAT2_28k.dat2wts  SHA-256 f4bb27bbf989b24500b45a4bccdf424b82844024ba8fed5059a389cefd03c2d0
+License / notice files:
+  Licenses/Models/DAT2/IllustrationJaNai-V3-DETAIL-MODEL-NOTICE.txt
+  Licenses/Models/DAT2/MangaJaNai-V3-LICENSE.txt
+  Licenses/Models/CC-BY-NC-4.0/legalcode.html
+
+No ownership of upstream model weights is claimed by ELTAX. The software license is not treated as an automatic license grant for model weights.
+Distribution remains subject to the model license conditions stated above. The stated 0.70C distribution plan is free and has no sale, advertising, subscription, or paid feature.
+
+IllustrationJaNai V3 Denoise — DAT2 4×
+
+Model ID: dat2-illustrationjanai-v3denoise-4x
+Creator / attribution: the-database
+Architecture: DAT architecture; embedDim 180; 6 residual groups; two-stage 2× PixelShuffle
+License: CC BY-NC 4.0 (exact V3 source tag; license text included).
+License evidence: The exact V3 source tag declares CC BY-NC 4.0 and its license text is included. Attribution, NonCommercial, and the BF16-checkpoint-to-DAT2 change are recorded. No ShareAlike condition is added.
+Final distribution status: CONDITIONAL
+Upstream: https://github.com/the-database/MangaJaNai/releases/tag/3.0.0
+Source revision: d2f8f92dc75303c557ca2d7a507913eff512ff32
+Original filename: 4x_IllustrationJaNai_V3denoise_DAT2_27k_bf16.safetensors
+Original SHA-256: 430D5E58053BE88D250B6EE2C1016A19F919BAAFB9B6BDA0F45C14B54453FB12
+Converted: Yes
+Conversion: Converted from source checkpoint to DAT2 archive format by the project's documented conversion path; no ownership of original weights is claimed.
+Source notes:
+  - Original checkpoint: 4x_IllustrationJaNai_V3denoise_DAT2_27k_bf16.safetensors.
+  - Original SHA-256: 430D5E58053BE88D250B6EE2C1016A19F919BAAFB9B6BDA0F45C14B54453FB12.
+  - Original license URL: https://creativecommons.org/licenses/by-nc/4.0/.
+Bundled artifacts:
+  Models/Upscalers/DAT2/IllustrationJaNai_V3denoise_DAT2_27k.dat2wts  SHA-256 f3126b3af329c8cde56d9215c667684a738891801489a0c5aa7e2e06d0f12308
+License / notice files:
+  Licenses/Models/DAT2/IllustrationJaNai-V3-DENOISE-MODEL-NOTICE.txt
+  Licenses/Models/DAT2/MangaJaNai-V3-LICENSE.txt
+  Licenses/Models/CC-BY-NC-4.0/legalcode.html
+
+No ownership of upstream model weights is claimed by ELTAX. The software license is not treated as an automatic license grant for model weights.
+Distribution remains subject to the model license conditions stated above. The stated 0.70C distribution plan is free and has no sale, advertising, subscription, or paid feature.

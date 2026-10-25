@@ -1,0 +1,27 @@
+IllustrationJaNai V3 Denoise — DAT2 4×
+
+Model ID: dat2-illustrationjanai-v3denoise-4x
+Creator / attribution: the-database
+Architecture: DAT architecture; embedDim 180; 6 residual groups; two-stage 2× PixelShuffle
+License: CC BY-NC 4.0 (exact V3 source tag; license text included).
+License evidence: The exact V3 source tag declares CC BY-NC 4.0 and its license text is included. Attribution, NonCommercial, and the BF16-checkpoint-to-DAT2 change are recorded. No ShareAlike condition is added.
+Final distribution status: CONDITIONAL
+Upstream: https://github.com/the-database/MangaJaNai/releases/tag/3.0.0
+Source revision: d2f8f92dc75303c557ca2d7a507913eff512ff32
+Original filename: 4x_IllustrationJaNai_V3denoise_DAT2_27k_bf16.safetensors
+Original SHA-256: 430D5E58053BE88D250B6EE2C1016A19F919BAAFB9B6BDA0F45C14B54453FB12
+Converted: Yes
+Conversion: Converted from source checkpoint to DAT2 archive format by the project's documented conversion path; no ownership of original weights is claimed.
+Source notes:
+  - Original checkpoint: 4x_IllustrationJaNai_V3denoise_DAT2_27k_bf16.safetensors.
+  - Original SHA-256: 430D5E58053BE88D250B6EE2C1016A19F919BAAFB9B6BDA0F45C14B54453FB12.
+  - Original license URL: https://creativecommons.org/licenses/by-nc/4.0/.
+Bundled artifacts:
+  Models/Upscalers/DAT2/IllustrationJaNai_V3denoise_DAT2_27k.dat2wts  SHA-256 f3126b3af329c8cde56d9215c667684a738891801489a0c5aa7e2e06d0f12308
+License / notice files:
+  Licenses/Models/DAT2/IllustrationJaNai-V3-DENOISE-MODEL-NOTICE.txt
+  Licenses/Models/DAT2/MangaJaNai-V3-LICENSE.txt
+  Licenses/Models/CC-BY-NC-4.0/legalcode.html
+
+No ownership of upstream model weights is claimed by ELTAX. The software license is not treated as an automatic license grant for model weights.
+Distribution remains subject to the model license conditions stated above. The stated 0.70C distribution plan is free and has no sale, advertising, subscription, or paid feature.

@@ -1,0 +1,4 @@
+Developed by ELTAX
+Project: https://github.com/laikal/Eltax-Encoder
+
+This file repeats the existing product attribution and project URL. It does not add or replace product license terms.

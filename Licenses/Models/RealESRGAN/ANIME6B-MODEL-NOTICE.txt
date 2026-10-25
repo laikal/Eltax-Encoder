@@ -1,0 +1,27 @@
+Real-ESRGAN x4plus anime 6B
+
+Model ID: esrgan-anime-6b
+Creator / attribution: Xintao Wang and Real-ESRGAN contributors
+Architecture: RRDBNet 64nf 6nb RGB
+License: Pretrained weight terms are not separately stated in the cited official sources; BSD-3-Clause applies to code and is not asserted for weights.
+License evidence: The official checkpoint source and code license are recorded separately. Official model publication and NCNN portable-package distribution precedent are documented; no explicit redistribution prohibition was found. Exact conversion provenance remains limited.
+Final distribution status: REASONABLE_DUE_DILIGENCE_PASS
+Upstream: https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.2.4/RealESRGAN_x4plus_anime_6B.pth
+Source revision: v0.2.2.4 checkpoint / v0.2.0 NCNN wrapper
+Original filename: RealESRGAN_x4plus_anime_6B.pth
+Original SHA-256: not available in pinned package metadata
+Converted: Yes
+Conversion: Upstream-provided NCNN param/bin export; precise conversion tool/revision not established in current records.
+Source notes:
+  - Model project: https://github.com/xinntao/Real-ESRGAN
+  - NCNN model source package metadata: https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan/tree/37026f49824c5cf84062e7c6a5dd71445dcf610f
+  - The bundled .param/.bin export is not byte-identical to the .pth checkpoint; an exact conversion build record is not in the package.
+Bundled artifacts:
+  Models/Upscalers/RealESRGAN/models/realesrgan-x4plus-anime.param  SHA-256 2b8fb6e0ae4d2d85704ca08c119a2f5ea40add4f2ecd512eb7f4cd44b6127ed4
+  Models/Upscalers/RealESRGAN/models/realesrgan-x4plus-anime.bin  SHA-256 fe01c269cfd10cdef8e018ab66ebe750cf79c7af4d1f9c16c737e1295229bacc
+License / notice files:
+  Licenses/Models/RealESRGAN/ANIME6B-MODEL-NOTICE.txt
+  Licenses/Software/RealESRGAN/UPSTREAM-CODE-BSD-3-CLAUSE-LICENSE.txt
+
+No ownership of upstream model weights is claimed by ELTAX. The software license is not treated as an automatic license grant for model weights.
+The reasonable due diligence assessment is recorded in the accompanying final model-rights matrix; it is not a legal opinion or a guarantee of rights.

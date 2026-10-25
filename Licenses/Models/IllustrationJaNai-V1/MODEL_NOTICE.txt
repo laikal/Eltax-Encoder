@@ -1,0 +1,29 @@
+IllustrationJaNai V1 ESRGAN
+
+Model ID: custom-janai-v1
+Creator / attribution: the-database
+Architecture: ESRGAN/RRDBNet 64nf 23nb RGB
+License: CC BY-NC-SA 4.0 (license from the exact upstream tag; text included).
+License evidence: The exact upstream tag LICENSE and official CC legalcode are included. Attribution, NonCommercial, and ShareAlike conditions are retained for the converted model.
+Final distribution status: CONDITIONAL
+Upstream: https://github.com/the-database/MangaJaNai/tree/5e9db8e5a26ef9336d6bc6baeebbe3b3ac740963
+Source revision: 5e9db8e5a26ef9336d6bc6baeebbe3b3ac740963
+Original filename: 4x_IllustrationJaNai_V1_ESRGAN_135k.pth
+Original SHA-256: c67e76c4b5f0474d5116e5f3885202d1bee68187e1389f82bb90baace24152f8
+Converted: Yes
+Conversion: Converted to NCNN param/bin by chaiNNer revision 46a3051ba4ef2bc5feb5f0f4ee929649a3e3764b.
+Source notes:
+  - Original checkpoint: 4x_IllustrationJaNai_V1_ESRGAN_135k.pth.
+  - OpenModelDB record: https://openmodeldb.info/models/4x-IllustrationJaNai-V1-ESRGAN
+  - Original checkpoint SHA-256 from pinned metadata: c67e76c4b5f0474d5116e5f3885202d1bee68187e1389f82bb90baace24152f8.
+  - License text: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en
+Bundled artifacts:
+  Models/Upscalers/RealESRGAN/models/custom-janai-v1/model.param  SHA-256 688db072378f3602dc60230b8ed8e726ef0e87f72165750ad628d4227c41012f
+  Models/Upscalers/RealESRGAN/models/custom-janai-v1/model.bin  SHA-256 1d5f792cd58cf31213193467b0ab5f2ff9a2e3de63d3bf8caa8abe8eebe95df5
+License / notice files:
+  Licenses/Models/IllustrationJaNai-V1/MODEL_NOTICE.txt
+  Licenses/Models/IllustrationJaNai-V1/LICENSE
+  Licenses/Models/CC-BY-NC-SA-4.0/legalcode.html
+
+No ownership of upstream model weights is claimed by ELTAX. The software license is not treated as an automatic license grant for model weights.
+Distribution remains subject to the model license conditions stated above. The stated 0.70C distribution plan is free and has no sale, advertising, subscription, or paid feature.

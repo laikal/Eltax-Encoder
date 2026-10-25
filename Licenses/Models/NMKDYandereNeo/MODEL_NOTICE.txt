@@ -1,0 +1,27 @@
+NMKD YandereNeo XL
+
+Model ID: custom-yandere-xl
+Creator / attribution: nmkd (as identified by pinned OpenModelDB metadata)
+Architecture: ESRGAN/RRDBNet 64nf 23nb RGB
+License: WTFPL is listed in pinned OpenModelDB community metadata; a creator-authored weight license was not independently confirmed.
+License evidence: Pinned OpenModelDB metadata declares WTFPL and records the source checkpoint SHA. This is community metadata, not a rights-holder-authored statement. A public mirror has the same checkpoint hash; no explicit redistribution prohibition was found.
+Final distribution status: REASONABLE_DUE_DILIGENCE_PASS
+Upstream: https://icedrive.net/1/f0UAiRqz3N
+Source revision: OpenModelDB commit 782aac088bd83dd3fc438a42eb0c3868dc559110
+Original filename: not recorded in pinned package metadata
+Original SHA-256: ddcb5856b948654b6298fd50ed90a461eff8442d298779c23724a8c0e7bbbab1
+Converted: Yes
+Conversion: Converted to NCNN param/bin by chaiNNer revision 46a3051ba4ef2bc5feb5f0f4ee929649a3e3764b.
+Source notes:
+  - OpenModelDB record: https://openmodeldb.info/models/4x-NMKD-YandereNeo-XL
+  - Pinned metadata: https://raw.githubusercontent.com/OpenModelDB/open-model-database/782aac088bd83dd3fc438a42eb0c3868dc559110/data/models/4x-NMKD-YandereNeo-XL.json
+  - Source checkpoint SHA-256: ddcb5856b948654b6298fd50ed90a461eff8442d298779c23724a8c0e7bbbab1.
+Bundled artifacts:
+  Models/Upscalers/RealESRGAN/models/custom-yandere-xl/model.param  SHA-256 688db072378f3602dc60230b8ed8e726ef0e87f72165750ad628d4227c41012f
+  Models/Upscalers/RealESRGAN/models/custom-yandere-xl/model.bin  SHA-256 23ef7bf838946b52f0fff23191a56238e475f73a594d3a20510045cac0201750
+License / notice files:
+  Licenses/Models/NMKDYandereNeo/MODEL_NOTICE.txt
+  Licenses/Models/WTFPL/COPYING
+
+No ownership of upstream model weights is claimed by ELTAX. The software license is not treated as an automatic license grant for model weights.
+The reasonable due diligence assessment is recorded in the accompanying final model-rights matrix; it is not a legal opinion or a guarantee of rights.

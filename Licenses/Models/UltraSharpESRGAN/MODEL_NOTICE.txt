@@ -1,0 +1,28 @@
+UltraSharp ESRGAN
+
+Model ID: custom-ultrasharp
+Creator / attribution: kim2091 (as identified by pinned OpenModelDB metadata)
+Architecture: ESRGAN/RRDBNet 64nf 23nb RGB
+License: CC BY-NC-SA 4.0 (declared by pinned model metadata; license text included).
+License evidence: Pinned OpenModelDB metadata identifies CC BY-NC-SA 4.0; the creator source and official license text are included. Attribution, NonCommercial, and ShareAlike conditions are retained for the converted model.
+Final distribution status: CONDITIONAL
+Upstream: https://mega.nz/folder/qZRBmaIY#nIG8KyWFcGNTuMX_XNbJ_g
+Source revision: OpenModelDB commit 782aac088bd83dd3fc438a42eb0c3868dc559110
+Original filename: not recorded in pinned package metadata
+Original SHA-256: a5812231fc936b42af08a5edba784195495d303d5b3248c24489ef0c4021fe01
+Converted: Yes
+Conversion: Converted to NCNN param/bin by chaiNNer revision 46a3051ba4ef2bc5feb5f0f4ee929649a3e3764b.
+Source notes:
+  - OpenModelDB record: https://openmodeldb.info/models/4x-UltraSharp
+  - Pinned metadata: https://raw.githubusercontent.com/OpenModelDB/open-model-database/782aac088bd83dd3fc438a42eb0c3868dc559110/data/models/4x-UltraSharp.json
+  - Source checkpoint SHA-256: a5812231fc936b42af08a5edba784195495d303d5b3248c24489ef0c4021fe01.
+  - License text: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en
+Bundled artifacts:
+  Models/Upscalers/RealESRGAN/models/custom-ultrasharp/model.param  SHA-256 688db072378f3602dc60230b8ed8e726ef0e87f72165750ad628d4227c41012f
+  Models/Upscalers/RealESRGAN/models/custom-ultrasharp/model.bin  SHA-256 1229d5ba0b9458a61954e2de722ce645665ad979ea196d159bc58f8b0f38c396
+License / notice files:
+  Licenses/Models/UltraSharpESRGAN/MODEL_NOTICE.txt
+  Licenses/Models/CC-BY-NC-SA-4.0/legalcode.html
+
+No ownership of upstream model weights is claimed by ELTAX. The software license is not treated as an automatic license grant for model weights.
+Distribution remains subject to the model license conditions stated above. The stated 0.70C distribution plan is free and has no sale, advertising, subscription, or paid feature.

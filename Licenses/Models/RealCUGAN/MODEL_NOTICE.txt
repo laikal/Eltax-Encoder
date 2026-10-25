@@ -1,0 +1,34 @@
+Real-CUGAN SE 2x (five weight variants)
+
+Model ID: cugan-se-2x
+Creator / attribution: bilibili/ailab (upstream project; weight rights holder not separately confirmed)
+Architecture: UpCunet2x / RGB; five denoise-strength variants
+License: Model-weight terms are not separately stated in the pinned evidence; the Real-CUGAN software MIT license is not asserted to cover the weights.
+License evidence: The pinned upstream repository MIT license is for code. No separate weight grant was located. Official model publication and NCNN package distribution precedent are recorded; no explicit redistribution prohibition was found.
+Final distribution status: REASONABLE_DUE_DILIGENCE_PASS
+Upstream: https://github.com/bilibili/ailab/tree/main/Real-CUGAN
+Source revision: 395302c5c70f1bff604c974e92e0a87e45c9f9ee
+Original filename: not recorded in pinned package metadata
+Original SHA-256: not available in pinned package metadata
+Converted: No
+Conversion: Packaged in upstream NCNN param/bin format; no ELTAX model conversion was performed or claimed.
+Source notes:
+  - Engine package/model context: https://github.com/nihui/realcugan-ncnn-vulkan/tree/395302c5c70f1bff604c974e92e0a87e45c9f9ee
+  - The pinned engine commit exposes the NCNN model files; a separate license statement for weights was not located.
+Bundled artifacts:
+  Models/Upscalers/RealCUGAN/models-se/up2x-conservative.bin  SHA-256 91c72c136e7ff8556323d4449c5ceeff22d9829bf8463a01137cadb8d59b84a0
+  Models/Upscalers/RealCUGAN/models-se/up2x-conservative.param  SHA-256 91efac7489bf249f092faa3764e3a3d1d31ef290051e39f2afd2138c98ccce30
+  Models/Upscalers/RealCUGAN/models-se/up2x-denoise1x.bin  SHA-256 09373c4fddfd2a57fb4af5e516eba1b4c9caa132fd52ffd01bcaefee543bf7f6
+  Models/Upscalers/RealCUGAN/models-se/up2x-denoise1x.param  SHA-256 91efac7489bf249f092faa3764e3a3d1d31ef290051e39f2afd2138c98ccce30
+  Models/Upscalers/RealCUGAN/models-se/up2x-denoise2x.bin  SHA-256 47427a52badebfbd7bb6db97196a2844c553f7f2bb93c9527b26347bea0430e7
+  Models/Upscalers/RealCUGAN/models-se/up2x-denoise2x.param  SHA-256 91efac7489bf249f092faa3764e3a3d1d31ef290051e39f2afd2138c98ccce30
+  Models/Upscalers/RealCUGAN/models-se/up2x-denoise3x.bin  SHA-256 610ebae63f388fe6f39615cc5f4eaeb038d5aa6ba8b299ba3b989f7f7a1a280a
+  Models/Upscalers/RealCUGAN/models-se/up2x-denoise3x.param  SHA-256 91efac7489bf249f092faa3764e3a3d1d31ef290051e39f2afd2138c98ccce30
+  Models/Upscalers/RealCUGAN/models-se/up2x-no-denoise.bin  SHA-256 7f135a712830b16678cb8247b9517308c5f3858fca9b10e1c3ad5ef6e261de0c
+  Models/Upscalers/RealCUGAN/models-se/up2x-no-denoise.param  SHA-256 91efac7489bf249f092faa3764e3a3d1d31ef290051e39f2afd2138c98ccce30
+License / notice files:
+  Licenses/Models/RealCUGAN/MODEL_NOTICE.txt
+  Licenses/Software/RealCUGAN/BILIBILI-REPOSITORY-MIT-LICENSE.txt
+
+No ownership of upstream model weights is claimed by ELTAX. The software license is not treated as an automatic license grant for model weights.
+The reasonable due diligence assessment is recorded in the accompanying final model-rights matrix; it is not a legal opinion or a guarantee of rights.
