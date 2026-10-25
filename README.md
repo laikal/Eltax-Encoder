@@ -39,6 +39,10 @@ AI upscaling can be turned **ON or OFF** independently from the selected output 
 
 ![ELTAX Encoder AI Upscaling](img/upscale_en.jpg)
 
+### AI Upscaling Sample
+
+![ELTAX Encoder AI Upscaling](img/upscail_sample.jpg)
+
 ---
 
 ## Features
@@ -503,6 +507,11 @@ AI 업스케일은 출력 코덱이나 형식과 별개로 사용자가 직접 *
 ### AI 업스케일
 
 ![ELTAX Encoder AI 업스케일](img/upscale_kr.jpg)
+
+
+### AI 업스케일 샘플
+
+![ELTAX Encoder AI Upscaling](img/upscail_sample.jpg)
 
 ---
 
