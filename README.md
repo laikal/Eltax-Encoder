@@ -2,7 +2,7 @@
 
 **English | [한국어](#한국어)**
 
-**Current release: v0.70C**
+**Current release: v0.70D**
 
 **ELTAX Encoder** is a portable Windows media processing utility built around **AI image and video upscaling**.
 
@@ -15,27 +15,29 @@ AI upscaling can be turned **ON or OFF** independently from the selected output 
 > No installer is required.  
 > Extract the entire package and run `EltaxEncoder.exe`.
 
+### What's new in v0.70D
+
+- Added manual **Korean / English** language selection from **Settings → Language**.
+- The selected language is saved and reused on the next launch.
+- Restored **Quick Settings** so it can be opened even before any files are added.
+- Quick Settings can be prepared in advance and continues to work with the existing batch/list-wide workflow.
+- Corrected version metadata consistency for the native launcher.
+
 ---
 
 ## Screenshots
 
 ### Main Window
 
-<!--
-![ELTAX Encoder Main Window](img/main_en.png)
--->
+![ELTAX Encoder Main Window](img/main_en.jpg)
 
 ### Encoding Settings
 
-<!--
-![ELTAX Encoder Encoding Settings](img/encoding_en.png)
--->
+![ELTAX Encoder Encoding Settings](img/encoding_en.jpg)
 
 ### AI Upscaling
 
-<!--
-![ELTAX Encoder AI Upscaling](img/upscale_en.png)
--->
+![ELTAX Encoder AI Upscaling](img/upscale_en.jpg)
 
 ---
 
@@ -49,7 +51,7 @@ AI upscaling can be turned **ON or OFF** independently from the selected output 
 - Batch processing
 - Video and image/animation batch families
 - Drag & drop file input
-- Quick Settings applied across the current job list
+- Quick Settings available before adding files and applicable across the current job list
 - Reusable encoding profiles
 - Source timing / VFR preservation
 - Optional custom output frame rate
@@ -57,7 +59,7 @@ AI upscaling can be turned **ON or OFF** independently from the selected output 
 - Still-image output
 - Animated GIF / APNG / Animated WebP output
 - Portable data storage
-- Korean and English language packs
+- Korean and English language packs with manual language selection
 - Built-in categorized Help
 - Third-party component and model license information available from **About**
 
@@ -289,11 +291,11 @@ A custom output frame rate can be selected when frame-rate conversion is desired
 
 Download the latest release from:
 
-`REPOSITORY_URL/releases`
+https://github.com/laikal/Eltax-Encoder/releases
 
 Download:
 
-`eltax-encoder-win-x64-0.70C.zip`
+`eltax-encoder-win-x64-0.70D.zip`
 
 Extract the **entire ZIP** to a folder and run:
 
@@ -418,6 +420,9 @@ Included language packs:
 - English
 - 한국어
 
+The language can be changed manually from **Settings → Language**.  
+If no language has been selected manually, ELTAX Encoder uses its existing automatic language detection and falls back to English when needed.
+
 ---
 
 ## Developer
@@ -462,7 +467,7 @@ directory.
 
 **[English](#eltax-encoder) | 한국어**
 
-**현재 버전: v0.70C**
+**현재 버전: v0.70D**
 
 **ELTAX Encoder**는 **AI 이미지·영상 업스케일링을 중심으로 설계된 Windows 포터블 미디어 처리 프로그램**입니다.
 
@@ -475,27 +480,29 @@ AI 업스케일은 출력 코덱이나 형식과 별개로 사용자가 직접 *
 > 별도의 설치 프로그램은 필요하지 않습니다.  
 > ZIP 전체를 압축 해제한 뒤 `EltaxEncoder.exe`를 실행하면 됩니다.
 
+### v0.70D 주요 변경 사항
+
+- **설정 → 언어**에서 한국어 / English를 사용자가 직접 선택할 수 있도록 추가
+- 선택한 언어를 저장하고 다음 실행에서도 유지
+- 파일을 추가하기 전에도 **빠른 설정** 창을 열 수 있도록 기존 동작 복구
+- 빠른 설정의 기존 일괄/목록 전체 적용 동작 유지
+- Native Launcher의 버전 메타데이터 정합성 수정
+
 ---
 
 ## 스크린샷
 
 ### 메인 화면
 
-<!--
-![ELTAX Encoder 메인 화면](img/main_ko.png)
--->
+![ELTAX Encoder 메인 화면](img/main_kr.jpg)
 
 ### 인코딩 설정
 
-<!--
-![ELTAX Encoder 인코딩 설정](img/encoding_ko.png)
--->
+![ELTAX Encoder 인코딩 설정](img/encoding_kr.jpg)
 
 ### AI 업스케일
 
-<!--
-![ELTAX Encoder AI 업스케일](img/upscale_ko.png)
--->
+![ELTAX Encoder AI 업스케일](img/upscale_kr.jpg)
 
 ---
 
@@ -509,7 +516,7 @@ AI 업스케일은 출력 코덱이나 형식과 별개로 사용자가 직접 *
 - 여러 파일 일괄 처리
 - 영상 / 이미지·애니메이션 배치 분리
 - 파일 Drag & Drop
-- 현재 작업 목록 전체에 적용할 수 있는 Quick Settings
+- 파일 추가 전에도 열 수 있으며 현재 작업 목록 전체에 적용할 수 있는 빠른 설정
 - 인코딩 설정 프로파일 저장 및 재사용
 - Source Timing / VFR 보존
 - 사용자 지정 출력 FPS
@@ -517,7 +524,7 @@ AI 업스케일은 출력 코덱이나 형식과 별개로 사용자가 직접 *
 - 이미지 출력
 - GIF / APNG / Animated WebP 출력
 - 포터블 데이터 구조
-- 한국어 / 영어 언어팩
+- 한국어 / 영어 언어팩 및 사용자 직접 언어 선택
 - 항목별 내장 도움말
 - **프로그램 정보 → Third-party Components & Licenses**에서 제3자 구성 요소와 AI 모델 라이선스 확인
 
@@ -751,11 +758,11 @@ Source Timing을 사용할 경우 원본의 표시 타이밍을 유지합니다.
 
 최신 Release:
 
-`REPOSITORY_URL/releases`
+https://github.com/laikal/Eltax-Encoder/releases
 
 다음 ZIP을 다운로드합니다.
 
-`eltax-encoder-win-x64-0.70C.zip`
+`eltax-encoder-win-x64-0.70D.zip`
 
 ZIP의 **전체 내용을 폴더에 압축 해제한 뒤**:
 
@@ -881,6 +888,9 @@ ELTAX Encoder 배포본에는 다음 구성 요소가 함께 포함됩니다.
 
 - English
 - 한국어
+
+언어는 **설정 → 언어**에서 직접 변경할 수 있습니다.  
+사용자가 직접 언어를 선택하지 않은 경우에는 기존 자동 언어 감지를 사용하며, 필요한 경우 English를 기본값으로 사용합니다.
 
 ---
 
