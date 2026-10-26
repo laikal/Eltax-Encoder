@@ -1,8 +1,8 @@
 # ELTAX Encoder
 
-**English | [한국어](#한국어)**
+**English | [한국어](#한국어) | [日本語](#日本語)**
 
-**Current release: v0.70D**
+**Current release: v0.71C**
 
 **ELTAX Encoder** is a portable Windows media processing utility built around **AI image and video upscaling**.
 
@@ -15,13 +15,13 @@ AI upscaling can be turned **ON or OFF** independently from the selected output 
 > No installer is required.  
 > Extract the entire package and run `EltaxEncoder.exe`.
 
-### What's new in v0.70D
+### What's new in v0.71C
 
-- Added manual **Korean / English** language selection from **Settings → Language**.
-- The selected language is saved and reused on the next launch.
-- Restored **Quick Settings** so it can be opened even before any files are added.
-- Quick Settings can be prepared in advance and continues to work with the existing batch/list-wide workflow.
-- Corrected version metadata consistency for the native launcher.
+- Added **Waifu2x CUNet 2×** support with noise levels from -1 through 3.
+- Added **Japanese (日本語)** as a fully selectable interface and Help language.
+- Reduced the first-open delay of **Quick Settings** by caching immutable FFmpeg feature metadata for the exact bundled binaries.
+- Korean, English, and Japanese can be selected manually from **Settings → Language**.
+- Existing Real-CUGAN, Real-ESRGAN / ESRGAN, DAT2, batch, timing, and output workflows remain available.
 
 ---
 
@@ -37,7 +37,7 @@ AI upscaling can be turned **ON or OFF** independently from the selected output 
 
 ### AI Upscaling
 
-![ELTAX Encoder AI Upscaling](img/upscale_en.jpg)
+![ELTAX Encoder AI Upscaling](img/aiscal_en.jpg)
 
 ### AI Upscaling Sample
 
@@ -63,7 +63,7 @@ AI upscaling can be turned **ON or OFF** independently from the selected output 
 - Still-image output
 - Animated GIF / APNG / Animated WebP output
 - Portable data storage
-- Korean and English language packs with manual language selection
+- Korean, English, and Japanese language packs with manual language selection
 - Built-in categorized Help
 - Third-party component and model license information available from **About**
 
@@ -72,6 +72,12 @@ AI upscaling can be turned **ON or OFF** independently from the selected output 
 ## AI Upscaling
 
 ELTAX Encoder includes several AI upscaling backends and models.
+
+### Waifu2x
+
+- **Waifu2x CUNet 2×**
+- Noise levels **-1 / 0 / 1 / 2 / 3**
+- NCNN / Vulkan runtime
 
 ### Real-CUGAN
 
@@ -299,7 +305,7 @@ https://github.com/laikal/Eltax-Encoder/releases
 
 Download:
 
-`eltax-encoder-win-x64-0.70D.zip`
+`eltax-encoder-win-x64-0.71C.zip`
 
 Extract the **entire ZIP** to a folder and run:
 
@@ -409,6 +415,7 @@ ELTAX Encoder includes:
 - Multiple AI model weights
 - NCNN / Vulkan AI runtimes
 - DAT2 runtime and model archives
+- Waifu2x CUNet model and NCNN / Vulkan runtime
 - FFmpeg / FFprobe
 - Self-contained .NET runtime
 - Language and Help resources
@@ -423,6 +430,7 @@ Included language packs:
 
 - English
 - 한국어
+- 日本語
 
 The language can be changed manually from **Settings → Language**.  
 If no language has been selected manually, ELTAX Encoder uses its existing automatic language detection and falls back to English when needed.
@@ -467,11 +475,13 @@ directory.
 
 ---
 
+---
+
 # 한국어
 
-**[English](#eltax-encoder) | 한국어**
+**[English](#eltax-encoder) | 한국어 | [日本語](#日本語)**
 
-**현재 버전: v0.70D**
+**현재 버전: v0.71C**
 
 **ELTAX Encoder**는 **AI 이미지·영상 업스케일링을 중심으로 설계된 Windows 포터블 미디어 처리 프로그램**입니다.
 
@@ -484,13 +494,13 @@ AI 업스케일은 출력 코덱이나 형식과 별개로 사용자가 직접 *
 > 별도의 설치 프로그램은 필요하지 않습니다.  
 > ZIP 전체를 압축 해제한 뒤 `EltaxEncoder.exe`를 실행하면 됩니다.
 
-### v0.70D 주요 변경 사항
+### v0.71C 주요 변경 사항
 
-- **설정 → 언어**에서 한국어 / English를 사용자가 직접 선택할 수 있도록 추가
-- 선택한 언어를 저장하고 다음 실행에서도 유지
-- 파일을 추가하기 전에도 **빠른 설정** 창을 열 수 있도록 기존 동작 복구
-- 빠른 설정의 기존 일괄/목록 전체 적용 동작 유지
-- Native Launcher의 버전 메타데이터 정합성 수정
+- **Waifu2x CUNet 2×** 지원 및 노이즈 단계 -1 ~ 3 추가
+- **日本語** 인터페이스와 도움말을 정식 지원 언어로 추가
+- 번들된 FFmpeg 바이너리와 정확히 일치하는 기능 메타데이터 캐시를 사용해 **빠른 설정 최초 실행 지연을 크게 단축**
+- **설정 → 언어**에서 한국어 / English / 日本語를 직접 선택 가능
+- 기존 Real-CUGAN, Real-ESRGAN / ESRGAN, DAT2 및 일괄 처리·타이밍·출력 기능 유지
 
 ---
 
@@ -506,7 +516,7 @@ AI 업스케일은 출력 코덱이나 형식과 별개로 사용자가 직접 *
 
 ### AI 업스케일
 
-![ELTAX Encoder AI 업스케일](img/upscale_kr.jpg)
+![ELTAX Encoder AI 업스케일](img/aiscal_kr.jpg)
 
 
 ### AI 업스케일 샘플
@@ -533,7 +543,7 @@ AI 업스케일은 출력 코덱이나 형식과 별개로 사용자가 직접 *
 - 이미지 출력
 - GIF / APNG / Animated WebP 출력
 - 포터블 데이터 구조
-- 한국어 / 영어 언어팩 및 사용자 직접 언어 선택
+- 한국어 / English / 日本語 언어팩 및 사용자 직접 언어 선택
 - 항목별 내장 도움말
 - **프로그램 정보 → Third-party Components & Licenses**에서 제3자 구성 요소와 AI 모델 라이선스 확인
 
@@ -542,6 +552,12 @@ AI 업스케일은 출력 코덱이나 형식과 별개로 사용자가 직접 *
 ## AI 업스케일
 
 ELTAX Encoder에는 여러 AI 업스케일 엔진과 모델이 포함되어 있습니다.
+
+### Waifu2x
+
+- **Waifu2x CUNet 2×**
+- 노이즈 단계 **-1 / 0 / 1 / 2 / 3**
+- NCNN / Vulkan 기반
 
 ### Real-CUGAN
 
@@ -771,7 +787,7 @@ https://github.com/laikal/Eltax-Encoder/releases
 
 다음 ZIP을 다운로드합니다.
 
-`eltax-encoder-win-x64-0.70D.zip`
+`eltax-encoder-win-x64-0.71C.zip`
 
 ZIP의 **전체 내용을 폴더에 압축 해제한 뒤**:
 
@@ -883,6 +899,7 @@ ELTAX Encoder 배포본에는 다음 구성 요소가 함께 포함됩니다.
 - 여러 AI 모델 weight
 - NCNN / Vulkan AI runtime
 - DAT2 runtime 및 모델 archive
+- Waifu2x CUNet 모델 및 NCNN / Vulkan runtime
 - FFmpeg / FFprobe
 - Self-contained .NET runtime
 - 언어팩 및 도움말
@@ -897,6 +914,7 @@ ELTAX Encoder 배포본에는 다음 구성 요소가 함께 포함됩니다.
 
 - English
 - 한국어
+- 日本語
 
 언어는 **설정 → 언어**에서 직접 변경할 수 있습니다.  
 사용자가 직접 언어를 선택하지 않은 경우에는 기존 자동 언어 감지를 사용하며, 필요한 경우 English를 기본값으로 사용합니다.
@@ -938,3 +956,482 @@ ELTAX Encoder 프로젝트 소스 코드에는 현재 별도의 오픈소스 라
 `Licenses\`
 
 폴더에서 확인할 수 있습니다.
+
+---
+
+# 日本語
+
+**[English](#eltax-encoder) | [한국어](#한국어) | 日本語**
+
+**現在のリリース: v0.71C**
+
+**ELTAX Encoder** は、**AIによる画像・動画アップスケーリングを中心に設計されたWindows向けポータブルメディア処理ツール**です。
+
+単なるエンコーダーへの追加機能としてAIアップスケーリングを扱うのではなく、動画・静止画・アニメーション画像で共通のAI処理パイプラインを利用できる構成になっています。
+
+AIアップスケーリングは、出力コーデックやフォーマットとは独立してユーザーが **ON / OFF** を選択できます。
+
+> **ポータブルアプリケーション**
+>
+> インストーラーは不要です。  
+> ZIP全体をフォルダーへ展開し、`EltaxEncoder.exe` を実行してください。
+
+### v0.71C の主な変更点
+
+- **Waifu2x CUNet 2×** とノイズレベル -1 ～ 3 を追加
+- **日本語** のインターフェースとヘルプを正式対応
+- 同梱FFmpegバイナリと一致する機能メタデータキャッシュにより、**Quick Settingsの初回表示待ち時間を大幅に短縮**
+- **設定 → 言語** から 한국어 / English / 日本語 を手動選択可能
+- 既存のReal-CUGAN、Real-ESRGAN / ESRGAN、DAT2、バッチ処理、タイミング、出力機能を維持
+
+---
+
+## スクリーンショット
+
+### メイン画面
+
+![ELTAX Encoder Main Window](img/main_en.jpg)
+
+### エンコード設定
+
+![ELTAX Encoder Encoding Settings](img/encoding_en.jpg)
+
+### AIアップスケーリング
+
+![ELTAX Encoder AI Upscaling](img/aiscal_en.jpg)
+
+### AIアップスケーリング サンプル
+
+![ELTAX Encoder AI Upscaling](img/upscail_sample.jpg)
+
+---
+
+## 主な機能
+
+- **動画 / 画像 / アニメーション画像のAIアップスケーリング**
+- 出力形式とは独立してAI処理をON / OFF可能
+- 対応メディアで共通AI処理パイプラインを使用
+- 複数のNCNN / VulkanおよびDAT2 AIアップスケールモデル
+- AIモデルのネイティブ倍率と最終出力解像度を個別に設定可能
+- バッチ処理
+- 動画と画像 / アニメーションのバッチ種別
+- ドラッグ＆ドロップによるファイル追加
+- ファイル追加前から開けるQuick Settingsと、現在のジョブ一覧全体への設定適用
+- エンコード設定プロファイルの保存と再利用
+- Source Timing / VFR維持
+- カスタム出力FPS
+- 複数の動画コーデックとコンテナ
+- 静止画出力
+- GIF / APNG / Animated WebP出力
+- ポータブルデータ構成
+- 한국어 / English / 日本語 の言語パックと手動言語選択
+- カテゴリ別の内蔵ヘルプ
+- **プログラム情報 → Third-party Components & Licenses** からサードパーティ構成要素とAIモデルのライセンス情報を確認可能
+
+---
+
+## AIアップスケーリング
+
+ELTAX Encoderには複数のAIアップスケールエンジンとモデルが含まれています。
+
+### Waifu2x
+
+- **Waifu2x CUNet 2×**
+- ノイズレベル **-1 / 0 / 1 / 2 / 3**
+- NCNN / Vulkanランタイム
+
+### Real-CUGAN
+
+- **Real-CUGAN SE 2×**
+- 複数のノイズ除去レベル
+- NCNN / Vulkanランタイム
+
+### Real-ESRGAN / ESRGAN
+
+- **Real-ESRGAN x4plus**
+- **Real-ESRGAN anime6B**
+- **NMKD YandereNeo XL**
+- **UltraSharp ESRGAN**
+- **IllustrationJaNai V1 ESRGAN**
+
+### DAT2
+
+- **UltraSharpV2 DAT2 4×**
+- **IllustrationJaNai V3 Detail DAT2 4×**
+- **IllustrationJaNai V3 Denoise DAT2 4×**
+
+DAT2モデルはELTAX EncoderのネイティブDAT2 workerとVulkan backendを使用します。
+
+---
+
+## AI倍率と出力解像度
+
+AIモデルの処理倍率と最終ファイルの出力解像度は別の設定です。
+
+例:
+
+```text
+入力
+1280 × 720
+
+        ↓
+
+AIモデル
+4× アップスケール
+
+        ↓
+
+AI処理解像度
+5120 × 2880
+
+        ↓
+
+最終出力リサイズ
+1920 × 1080
+
+        ↓
+
+出力ファイル
+1920 × 1080
+```
+
+最終出力リサイズを無効にした場合、AIモデルのネイティブアップスケール解像度がそのまま最終出力解像度になります。
+
+これにより、高解像度でAI処理を行った後、目的の配布解像度へ縮小して保存することもできます。
+
+---
+
+## 対応動画コーデック
+
+選択したエンコード方式とハードウェア環境に応じて、次の動画コーデックを利用できます。
+
+- **H.264 / AVC**
+  - libx264
+  - AMD AMF
+- **H.265 / HEVC**
+  - libx265
+  - AMD AMF
+- **VP9**
+  - libvpx-vp9
+- **AV1**
+  - SVT-AV1
+  - libaom-av1
+- **Xvid**
+  - libxvid
+
+---
+
+## 対応コンテナ
+
+- MP4
+- MKV
+- WebM
+- AVI
+
+利用可能な組み合わせは選択したコーデックによって異なります。
+
+---
+
+## オーディオエンコード
+
+利用可能なオーディオエンコード経路には以下が含まれます。
+
+- AAC
+- MP3
+- Opus
+- Vorbis
+- PCM
+
+利用可能な組み合わせは選択した出力コンテナによって異なります。
+
+---
+
+## 画像出力
+
+対応する静止画形式:
+
+- JPEG
+- PNG
+- WebP
+- AVIF
+- BMP
+- TIFF
+
+必要に応じてAIアップスケーリングを行った後、最終画像を保存できます。
+
+---
+
+## アニメーション画像出力
+
+対応形式:
+
+- GIF
+- APNG
+- Animated WebP
+
+AI処理を使用する場合、デコードされた各フレームをアップスケールした後、最終出力サイズとアニメーション形式で保存します。
+
+Source Timingを使用する場合、元の表示タイミングを維持します。
+
+---
+
+## バッチ処理
+
+複数のファイルを1つのジョブ一覧に追加できます。
+
+1つのジョブ一覧では1種類のメディアファミリーを使用します。
+
+### 画像 / アニメーション
+
+例:
+
+- PNG
+- JPEG
+- WebP
+- GIF
+- APNG
+- Animated WebP
+
+### 動画
+
+例:
+
+- MP4
+- MKV
+- WebM
+- AVI
+
+最初に追加されたファイルによって、そのジョブ一覧のメディアファミリーが決まります。
+
+互換性のない別メディアファミリーのファイルが同じバッチへ自動的に混在することはありません。
+
+---
+
+## プロファイル
+
+よく使うエンコード・処理設定を再利用可能なプロファイルとして保存できます。
+
+プロファイルには次のような設定を保存できます。
+
+- 出力形式
+- 動画コーデック
+- オーディオコーデック
+- AIモデル
+- 出力解像度
+- リサイズ方式
+- FPS設定
+- コーデック固有設定
+
+保存したプロファイルは後の処理で再選択できます。
+
+---
+
+## リサイズ方式
+
+最終出力解像度を指定した場合、複数のリサイズ方式を利用できます。
+
+### Fit
+
+アスペクト比を維持しながら、元画像全体が指定した出力領域内に収まるように調整します。
+
+### Fill
+
+アスペクト比を維持しながら出力領域全体を埋めます。必要に応じて一部がクロップされます。
+
+### Stretch
+
+元のアスペクト比を維持せず、指定したサイズへ直接リサイズします。
+
+---
+
+## タイミング
+
+ELTAX Encoderはデフォルトで元ソースの表示タイムラインを維持します。
+
+**Custom FPS** を使用しない場合:
+
+- 元のタイミングを維持
+- VFR入力の表示タイミングを維持可能
+- AIアップスケーリングは空間的な画像情報を処理し、元のタイムライン自体は変更しない
+
+フレームレート変換が必要な場合はカスタム出力FPSを指定できます。
+
+---
+
+## ダウンロードと実行
+
+最新Release:
+
+https://github.com/laikal/Eltax-Encoder/releases
+
+次のZIPをダウンロードします。
+
+`eltax-encoder-win-x64-0.71C.zip`
+
+ZIPの**全内容をフォルダーへ展開**した後:
+
+`EltaxEncoder.exe`
+
+を実行してください。
+
+ZIP内から直接実行しないでください。
+
+インストーラーは不要です。
+
+---
+
+## ポータブルデータ
+
+ELTAX Encoderはポータブルアプリケーションとして設計されています。
+
+設定、作業データ、一時データなどのアプリケーション管理ファイルは、別途インストールされた環境へ暗黙に依存せず、ポータブル配布構造内で管理されます。
+
+通常の利用では、配布されたディレクトリ構造を維持してください。
+
+---
+
+## FFmpeg
+
+ELTAX Encoderはメディアのデコード、エンコード、プローブ、フィルタリング、コンテナ処理に **FFmpeg 9.0.2** を使用します。
+
+配布版のFFmpegはGyan FFmpeg Full buildをベースにしています。
+
+FFmpegはELTAX Encoderとは別の外部メディア処理コンポーネントとして実行されます。
+
+FFmpegおよび同梱されるサードパーティライブラリには、それぞれのライセンスが適用されます。
+
+詳細:
+
+**プログラム情報 → Third-party Components & Licenses**
+
+および配布版の:
+
+`Licenses\`
+
+ディレクトリを参照してください。
+
+---
+
+## AIモデルのライセンス
+
+ELTAX Encoderに同梱されるAIモデルには、各モデルの原作者・配布者が定める条件が適用されます。
+
+一部のモデルには、次のCreative Commonsライセンスが適用されます。
+
+- CC BY-NC 4.0
+- CC BY-NC-SA 4.0
+
+モデルの出典、作者表示、ライセンス、変換に関する情報は:
+
+**プログラム情報 → Third-party Components & Licenses**
+
+および配布版の:
+
+`Licenses\`
+
+ディレクトリで確認できます。
+
+ELTAX Encoderは同梱されるサードパーティAIモデルの所有権を主張しません。
+
+---
+
+## ヘルプ
+
+ELTAX Encoderには、次の内容を確認できるカテゴリ別ヘルプが含まれています。
+
+- クイックスタート
+- ファイル追加
+- バッチ処理
+- プロファイル
+- AIアップスケーリング
+- AIモデル倍率
+- 出力解像度
+- リサイズ方式
+- 動画エンコード
+- 画像出力
+- アニメーション画像出力
+- FPSとタイミング
+- トラブルシューティング
+- ポータブル運用
+
+**F1** またはプログラムメニューのヘルプから開けます。
+
+---
+
+## システム要件
+
+- 64-bit Windows 10 または Windows 11
+- x64プロセッサ
+- 入力ファイル、一時処理データ、出力ファイルを保存するための十分な空きディスク容量
+- AIアップスケーリング利用時はVulkan対応GPUと互換グラフィックスドライバー
+
+AI処理性能は、選択したモデル、入力解像度、GPU性能、利用可能なVRAMによって大きく異なります。
+
+CPU動画エンコード性能は、選択したコーデックとCPU性能によって異なります。
+
+---
+
+## パッケージサイズ
+
+ELTAX Encoderには次のコンポーネントが含まれています。
+
+- 複数のAIモデルウェイト
+- NCNN / Vulkan AIランタイム
+- DAT2ランタイムとモデルアーカイブ
+- Waifu2x CUNetモデルとNCNN / Vulkanランタイム
+- FFmpeg / FFprobe
+- Self-contained .NETランタイム
+- 言語・ヘルプリソース
+
+ポータブル環境で追加インストールせずに使用できるよう必要なコンポーネントを同梱しているため、展開後の容量は一般的なエンコーダーのみのアプリケーションより大きくなります。
+
+---
+
+## 言語
+
+同梱言語パック:
+
+- English
+- 한국어
+- 日本語
+
+言語は **設定 → 言語** から手動で変更できます。  
+ユーザーが明示的に選択していない場合はOSの言語を自動検出し、必要に応じてEnglishへフォールバックします。
+
+---
+
+## 開発者
+
+**Eltax**
+
+---
+
+## 免責事項
+
+ELTAX Encoderは独立して制作されたメディア処理ツールです。
+
+サードパーティのプロジェクト名、モデル名、コーデック名、商標、ソフトウェアコンポーネントに関する権利は、それぞれの権利者に帰属します。
+
+出力品質、処理速度、ハードウェアアクセラレーションの利用可否、AIモデルの動作は、入力メディア、選択設定、ハードウェア、ドライバー、サードパーティランタイム環境によって異なる場合があります。
+
+重要な元メディアは必ず別途バックアップしてください。
+
+---
+
+## ライセンス
+
+ELTAX Encoderプロジェクトのソースコードには、現在オープンソースライセンスは付与されていません。
+
+**Copyright © Eltax. All rights reserved.**
+
+同梱されるサードパーティソフトウェア、ライブラリ、ランタイム、AIモデルには、それぞれのライセンスと権利条件が適用されます。
+
+関連する出典、作者表示、ライセンス本文、モデル通知は:
+
+**プログラム情報 → Third-party Components & Licenses**
+
+および配布版の:
+
+`Licenses\`
+
+ディレクトリで確認できます。
