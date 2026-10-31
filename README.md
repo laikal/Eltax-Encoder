@@ -13,7 +13,7 @@ AI upscaling can be turned **ON or OFF** independently from the selected output 
 > **Portable application**
 >
 > No installer is required.  
-> Extract the entire package and run `EltaxEncoder.exe`.
+> Extract the entire archive to a folder and run `EltaxEncoder.exe`.
 
 ### What's new in v0.72
 
@@ -309,19 +309,15 @@ A custom output frame rate can be selected when frame-rate conversion is desired
 
 ## Download and Run
 
-Download the latest release from:
+Download the latest release archive from:
 
 https://github.com/laikal/Eltax-Encoder/releases
 
-Download:
-
-`eltax-encoder-win-x64-0.72.zip`
-
-Extract the **entire ZIP** to a folder and run:
+Extract the **entire archive** to a folder and run:
 
 `EltaxEncoder.exe`
 
-Do not run the application directly from inside the ZIP archive.
+Do not run the application directly from inside the archive.
 
 No installer is required.
 
@@ -503,7 +499,7 @@ AI 업스케일은 출력 코덱이나 형식과 별개로 사용자가 직접 *
 > **포터블 프로그램**
 >
 > 별도의 설치 프로그램은 필요하지 않습니다.  
-> ZIP 전체를 압축 해제한 뒤 `EltaxEncoder.exe`를 실행하면 됩니다.
+> 배포 압축 파일의 전체 내용을 폴더에 해제한 뒤 `EltaxEncoder.exe`를 실행하면 됩니다.
 
 ### v0.72 주요 변경 사항
 
@@ -802,21 +798,17 @@ Source Timing을 사용할 경우 원본의 표시 타이밍을 유지합니다.
 
 ## 다운로드 및 실행
 
-최신 Release:
+최신 배포 압축 파일은 다음 Releases 페이지에서 다운로드할 수 있습니다.
 
 https://github.com/laikal/Eltax-Encoder/releases
 
-다음 ZIP을 다운로드합니다.
-
-`eltax-encoder-win-x64-0.72.zip`
-
-ZIP의 **전체 내용을 폴더에 압축 해제한 뒤**:
+압축 파일의 **전체 내용을 폴더에 해제한 뒤**:
 
 `EltaxEncoder.exe`
 
 를 실행하세요.
 
-ZIP 파일 안에서 직접 실행하지 마세요.
+압축 파일 내부에서 직접 실행하지 마세요.
 
 별도의 설치 프로그램은 필요하지 않습니다.
 
@@ -996,7 +988,7 @@ AIアップスケーリングは、出力コーデックやフォーマットと
 > **ポータブルアプリケーション**
 >
 > インストーラーは不要です。  
-> ZIP全体をフォルダーへ展開し、`EltaxEncoder.exe` を実行してください。
+> 配布アーカイブ全体をフォルダーへ展開し、`EltaxEncoder.exe` を実行してください。
 
 ### v0.72 の主な変更点
 
@@ -1292,21 +1284,17 @@ ELTAX Encoderはデフォルトで元ソースの表示タイムラインを維�
 
 ## ダウンロードと実行
 
-最新Release:
+最新の配布アーカイブは、次のReleasesページからダウンロードできます。
 
 https://github.com/laikal/Eltax-Encoder/releases
 
-次のZIPをダウンロードします。
-
-`eltax-encoder-win-x64-0.72.zip`
-
-ZIPの**全内容をフォルダーへ展開**した後:
+アーカイブの**全内容をフォルダーへ展開**した後:
 
 `EltaxEncoder.exe`
 
 を実行してください。
 
-ZIP内から直接実行しないでください。
+アーカイブ内から直接実行しないでください。
 
 インストーラーは不要です。
 
