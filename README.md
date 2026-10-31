@@ -2,7 +2,7 @@
 
 **English | [한국어](#한국어) | [日本語](#日本語)**
 
-**Current release: v0.71C**
+**Current release: v0.72**
 
 **ELTAX Encoder** is a portable Windows media processing utility built around **AI image and video upscaling**.
 
@@ -15,13 +15,14 @@ AI upscaling can be turned **ON or OFF** independently from the selected output 
 > No installer is required.  
 > Extract the entire package and run `EltaxEncoder.exe`.
 
-### What's new in v0.71C
+### What's new in v0.72
 
-- Added **Waifu2x CUNet 2×** support with noise levels from -1 through 3.
-- Added **Japanese (日本語)** as a fully selectable interface and Help language.
-- Reduced the first-open delay of **Quick Settings** by caching immutable FFmpeg feature metadata for the exact bundled binaries.
-- Korean, English, and Japanese can be selected manually from **Settings → Language**.
-- Existing Real-CUGAN, Real-ESRGAN / ESRGAN, DAT2, batch, timing, and output workflows remain available.
+- Added **Bubble AnimeScale SwinIR Small 2×** for anime-oriented, quality-first upscaling.
+- Added a native **NCNN / Vulkan** SwinIR backend with a custom Vulkan attention MatMul path.
+- Added overlap-based tiled SwinIR processing with anchored image-edge handling for improved edge and seam quality.
+- SwinIR is available through the same shared AI pipeline for **video, still images, and animated images**.
+- SwinIR prioritizes output quality over speed and can be significantly slower than the other bundled AI models.
+- Existing **Waifu2x CUNet**, Real-CUGAN, Real-ESRGAN / ESRGAN, DAT2, Japanese localization, Quick Settings improvements, batch, timing, and output workflows remain available.
 
 ---
 
@@ -50,7 +51,7 @@ AI upscaling can be turned **ON or OFF** independently from the selected output 
 - AI upscaling for **video, images, and animated images**
 - AI processing can be enabled or disabled independently of the output format
 - Shared AI processing pipeline across supported media types
-- Multiple NCNN / Vulkan and DAT2 AI upscaling models
+- Multiple NCNN / Vulkan, DAT2, and SwinIR AI upscaling models
 - Final output resolution can be controlled independently from the native scale of the selected AI model
 - Batch processing
 - Video and image/animation batch families
@@ -78,6 +79,15 @@ ELTAX Encoder includes several AI upscaling backends and models.
 - **Waifu2x CUNet 2×**
 - Noise levels **-1 / 0 / 1 / 2 / 3**
 - NCNN / Vulkan runtime
+
+### SwinIR
+
+- **Bubble AnimeScale SwinIR Small 2×**
+- Anime-oriented, quality-first model
+- Native NCNN / Vulkan worker with custom Vulkan attention MatMul
+- Overlap-based tiled processing with anchored edge handling
+- Available for video, still images, and animated images through the shared AI pipeline
+- **Slow** compared with the other bundled AI models
 
 ### Real-CUGAN
 
@@ -305,7 +315,7 @@ https://github.com/laikal/Eltax-Encoder/releases
 
 Download:
 
-`eltax-encoder-win-x64-0.71C.zip`
+`eltax-encoder-win-x64-0.72.zip`
 
 Extract the **entire ZIP** to a folder and run:
 
@@ -416,6 +426,7 @@ ELTAX Encoder includes:
 - NCNN / Vulkan AI runtimes
 - DAT2 runtime and model archives
 - Waifu2x CUNet model and NCNN / Vulkan runtime
+- Bubble AnimeScale SwinIR Small model and native NCNN / Vulkan runtime
 - FFmpeg / FFprobe
 - Self-contained .NET runtime
 - Language and Help resources
@@ -481,7 +492,7 @@ directory.
 
 **[English](#eltax-encoder) | 한국어 | [日本語](#日本語)**
 
-**현재 버전: v0.71C**
+**현재 버전: v0.72**
 
 **ELTAX Encoder**는 **AI 이미지·영상 업스케일링을 중심으로 설계된 Windows 포터블 미디어 처리 프로그램**입니다.
 
@@ -494,13 +505,14 @@ AI 업스케일은 출력 코덱이나 형식과 별개로 사용자가 직접 *
 > 별도의 설치 프로그램은 필요하지 않습니다.  
 > ZIP 전체를 압축 해제한 뒤 `EltaxEncoder.exe`를 실행하면 됩니다.
 
-### v0.71C 주요 변경 사항
+### v0.72 주요 변경 사항
 
-- **Waifu2x CUNet 2×** 지원 및 노이즈 단계 -1 ~ 3 추가
-- **日本語** 인터페이스와 도움말을 정식 지원 언어로 추가
-- 번들된 FFmpeg 바이너리와 정확히 일치하는 기능 메타데이터 캐시를 사용해 **빠른 설정 최초 실행 지연을 크게 단축**
-- **설정 → 언어**에서 한국어 / English / 日本語를 직접 선택 가능
-- 기존 Real-CUGAN, Real-ESRGAN / ESRGAN, DAT2 및 일괄 처리·타이밍·출력 기능 유지
+- 애니메이션 계열의 품질 우선 업스케일을 위한 **Bubble AnimeScale SwinIR Small 2×** 추가
+- custom Vulkan attention MatMul을 사용하는 네이티브 **NCNN / Vulkan** SwinIR backend 추가
+- 이미지 가장자리와 타일 경계 품질을 개선하기 위한 overlap 기반 타일 처리 및 anchored edge 처리 적용
+- 영상 / 이미지 / 애니메이션 이미지의 기존 공통 AI 처리 경로에서 SwinIR 사용 가능
+- SwinIR은 속도보다 출력 품질을 우선하는 모델로, 다른 번들 AI 모델보다 처리 속도가 크게 느릴 수 있음
+- 기존 **Waifu2x CUNet**, Real-CUGAN, Real-ESRGAN / ESRGAN, DAT2, 日本語 지원, 빠른 설정 개선, 일괄 처리·타이밍·출력 기능 유지
 
 ---
 
@@ -530,7 +542,7 @@ AI 업스케일은 출력 코덱이나 형식과 별개로 사용자가 직접 *
 - **영상 / 이미지 / 애니메이션 이미지 AI 업스케일**
 - 출력 형식과 별도로 AI 처리 ON / OFF 가능
 - 지원 미디어에서 공통 AI 처리 경로 사용
-- 여러 NCNN / Vulkan 및 DAT2 AI 업스케일 모델 제공
+- 여러 NCNN / Vulkan, DAT2 및 SwinIR AI 업스케일 모델 제공
 - AI 모델 자체 배율과 최종 출력 해상도를 별도로 설정 가능
 - 여러 파일 일괄 처리
 - 영상 / 이미지·애니메이션 배치 분리
@@ -558,6 +570,15 @@ ELTAX Encoder에는 여러 AI 업스케일 엔진과 모델이 포함되어 있�
 - **Waifu2x CUNet 2×**
 - 노이즈 단계 **-1 / 0 / 1 / 2 / 3**
 - NCNN / Vulkan 기반
+
+### SwinIR
+
+- **Bubble AnimeScale SwinIR Small 2×**
+- 애니메이션 계열의 품질 우선 모델
+- custom Vulkan attention MatMul을 사용하는 네이티브 NCNN / Vulkan worker
+- overlap 기반 타일 처리 및 anchored edge 처리
+- 영상 / 이미지 / 애니메이션 이미지의 공통 AI 처리 경로에서 사용 가능
+- 다른 번들 AI 모델과 비교해 **처리 속도가 느린 편**
 
 ### Real-CUGAN
 
@@ -787,7 +808,7 @@ https://github.com/laikal/Eltax-Encoder/releases
 
 다음 ZIP을 다운로드합니다.
 
-`eltax-encoder-win-x64-0.71C.zip`
+`eltax-encoder-win-x64-0.72.zip`
 
 ZIP의 **전체 내용을 폴더에 압축 해제한 뒤**:
 
@@ -900,6 +921,7 @@ ELTAX Encoder 배포본에는 다음 구성 요소가 함께 포함됩니다.
 - NCNN / Vulkan AI runtime
 - DAT2 runtime 및 모델 archive
 - Waifu2x CUNet 모델 및 NCNN / Vulkan runtime
+- Bubble AnimeScale SwinIR Small 모델 및 네이티브 NCNN / Vulkan runtime
 - FFmpeg / FFprobe
 - Self-contained .NET runtime
 - 언어팩 및 도움말
@@ -963,7 +985,7 @@ ELTAX Encoder 프로젝트 소스 코드에는 현재 별도의 오픈소스 라
 
 **[English](#eltax-encoder) | [한국어](#한국어) | 日本語**
 
-**現在のリリース: v0.71C**
+**現在のリリース: v0.72**
 
 **ELTAX Encoder** は、**AIによる画像・動画アップスケーリングを中心に設計されたWindows向けポータブルメディア処理ツール**です。
 
@@ -976,13 +998,14 @@ AIアップスケーリングは、出力コーデックやフォーマットと
 > インストーラーは不要です。  
 > ZIP全体をフォルダーへ展開し、`EltaxEncoder.exe` を実行してください。
 
-### v0.71C の主な変更点
+### v0.72 の主な変更点
 
-- **Waifu2x CUNet 2×** とノイズレベル -1 ～ 3 を追加
-- **日本語** のインターフェースとヘルプを正式対応
-- 同梱FFmpegバイナリと一致する機能メタデータキャッシュにより、**Quick Settingsの初回表示待ち時間を大幅に短縮**
-- **設定 → 言語** から 한국어 / English / 日本語 を手動選択可能
-- 既存のReal-CUGAN、Real-ESRGAN / ESRGAN、DAT2、バッチ処理、タイミング、出力機能を維持
+- アニメ向けの品質重視アップスケーリング用に **Bubble AnimeScale SwinIR Small 2×** を追加
+- custom Vulkan attention MatMulを使用するネイティブ **NCNN / Vulkan** SwinIRバックエンドを追加
+- 画像端とタイル境界の品質を改善するため、overlapベースのタイル処理とanchored edge処理を採用
+- 動画・静止画・アニメーション画像の共通AI処理パイプラインからSwinIRを利用可能
+- SwinIRは速度より画質を優先するモデルで、他の同梱AIモデルより処理が大幅に遅くなる場合があります
+- 既存の **Waifu2x CUNet**、Real-CUGAN、Real-ESRGAN / ESRGAN、DAT2、日本語対応、Quick Settings改善、バッチ処理、タイミング、出力機能を維持
 
 ---
 
@@ -1011,7 +1034,7 @@ AIアップスケーリングは、出力コーデックやフォーマットと
 - **動画 / 画像 / アニメーション画像のAIアップスケーリング**
 - 出力形式とは独立してAI処理をON / OFF可能
 - 対応メディアで共通AI処理パイプラインを使用
-- 複数のNCNN / VulkanおよびDAT2 AIアップスケールモデル
+- 複数のNCNN / Vulkan、DAT2およびSwinIR AIアップスケールモデル
 - AIモデルのネイティブ倍率と最終出力解像度を個別に設定可能
 - バッチ処理
 - 動画と画像 / アニメーションのバッチ種別
@@ -1039,6 +1062,15 @@ ELTAX Encoderには複数のAIアップスケールエンジンとモデルが�
 - **Waifu2x CUNet 2×**
 - ノイズレベル **-1 / 0 / 1 / 2 / 3**
 - NCNN / Vulkanランタイム
+
+### SwinIR
+
+- **Bubble AnimeScale SwinIR Small 2×**
+- アニメ向けの品質重視モデル
+- custom Vulkan attention MatMulを使用するネイティブNCNN / Vulkan worker
+- overlapベースのタイル処理とanchored edge処理
+- 動画・静止画・アニメーション画像の共通AI処理パイプラインから利用可能
+- 他の同梱AIモデルと比べて **処理速度は遅め**
 
 ### Real-CUGAN
 
@@ -1266,7 +1298,7 @@ https://github.com/laikal/Eltax-Encoder/releases
 
 次のZIPをダウンロードします。
 
-`eltax-encoder-win-x64-0.71C.zip`
+`eltax-encoder-win-x64-0.72.zip`
 
 ZIPの**全内容をフォルダーへ展開**した後:
 
@@ -1379,6 +1411,7 @@ ELTAX Encoderには次のコンポーネントが含まれています。
 - NCNN / Vulkan AIランタイム
 - DAT2ランタイムとモデルアーカイブ
 - Waifu2x CUNetモデルとNCNN / Vulkanランタイム
+- Bubble AnimeScale SwinIR SmallモデルとネイティブNCNN / Vulkanランタイム
 - FFmpeg / FFprobe
 - Self-contained .NETランタイム
 - 言語・ヘルプリソース
