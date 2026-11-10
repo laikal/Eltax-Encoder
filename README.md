@@ -2,7 +2,7 @@
 
 **English | [한국어](#한국어) | [日本語](#日本語)**
 
-**Current release: v0.72**
+**Current release: v0.8**
 
 **ELTAX Encoder** is a portable Windows media processing utility built around **AI image and video upscaling**.
 
@@ -15,14 +15,13 @@ AI upscaling can be turned **ON or OFF** independently from the selected output 
 > No installer is required.  
 > Extract the entire archive to a folder and run `EltaxEncoder.exe`.
 
-### What's new in v0.72
+### What's new in v0.8
 
-- Added **Bubble AnimeScale SwinIR Small 2×** for anime-oriented, quality-first upscaling.
-- Added a native **NCNN / Vulkan** SwinIR backend with a custom Vulkan attention MatMul path.
-- Added overlap-based tiled SwinIR processing with anchored image-edge handling for improved edge and seam quality.
-- SwinIR is available through the same shared AI pipeline for **video, still images, and animated images**.
-- SwinIR prioritizes output quality over speed and can be significantly slower than the other bundled AI models.
-- Existing **Waifu2x CUNet**, Real-CUGAN, Real-ESRGAN / ESRGAN, DAT2, Japanese localization, Quick Settings improvements, batch, timing, and output workflows remain available.
+- Added **MOV / Apple ProRes 4444** output for regular video inputs.
+- Regular video can now be converted to ProRes 4444 MOV while using the existing AI upscaling, final resize, Source Timing / VFR, and Custom FPS workflows.
+- Added validated MOV audio paths for **AAC** and **PCM S16LE**.
+- Existing transparent-animation workflows remain available: **Animated WebP / GIF / APNG → MOV / ProRes 4444** with alpha-channel preservation when the source provides transparency.
+- Existing Waifu2x, Real-CUGAN, Real-ESRGAN / ESRGAN, DAT2, SwinIR, batch, timing, image, animation, and video workflows remain available.
 
 ---
 
@@ -60,9 +59,10 @@ AI upscaling can be turned **ON or OFF** independently from the selected output 
 - Reusable encoding profiles
 - Source timing / VFR preservation
 - Optional custom output frame rate
-- Multiple video codecs and containers
+- Multiple video codecs and containers, including MOV / ProRes 4444
 - Still-image output
 - Animated GIF / APNG / Animated WebP output
+- Animated WebP / GIF / APNG to alpha-preserving MOV / ProRes 4444 conversion
 - Portable data storage
 - Korean, English, and Japanese language packs with manual language selection
 - Built-in categorized Help
@@ -167,6 +167,15 @@ Depending on the selected encoding mode and hardware environment, ELTAX Encoder 
   - libaom-av1
 - **Xvid**
   - libxvid
+- **Apple ProRes 4444**
+  - prores_ks
+  - アルファチャンネル対応MOV出力
+- **Apple ProRes 4444**
+  - prores_ks
+  - 알파 채널을 지원하는 MOV 출력
+- **Apple ProRes 4444**
+  - prores_ks
+  - MOV output with alpha-channel support
 
 ---
 
@@ -176,6 +185,7 @@ Depending on the selected encoding mode and hardware environment, ELTAX Encoder 
 - MKV
 - WebM
 - AVI
+- MOV
 
 Container availability depends on the selected codec.
 
@@ -192,6 +202,8 @@ Available audio encoding paths include:
 - PCM
 
 Available combinations depend on the selected output container.
+
+For MOV / ProRes 4444 output, validated audio paths include **AAC** and **PCM S16LE**.
 
 ---
 
@@ -221,6 +233,8 @@ Supported animated output formats include:
 AI processing is performed on the decoded frames before final output scaling and animation encoding.
 
 Source presentation timing is preserved when using source timing.
+
+Animated WebP, GIF, and APNG sources can also be converted to **MOV / ProRes 4444**. Alpha is preserved when the source animation provides transparency.
 
 ---
 
@@ -488,7 +502,7 @@ directory.
 
 **[English](#eltax-encoder) | 한국어 | [日本語](#日本語)**
 
-**현재 버전: v0.72**
+**현재 버전: v0.8**
 
 **ELTAX Encoder**는 **AI 이미지·영상 업스케일링을 중심으로 설계된 Windows 포터블 미디어 처리 프로그램**입니다.
 
@@ -501,14 +515,13 @@ AI 업스케일은 출력 코덱이나 형식과 별개로 사용자가 직접 *
 > 별도의 설치 프로그램은 필요하지 않습니다.  
 > 배포 압축 파일의 전체 내용을 폴더에 해제한 뒤 `EltaxEncoder.exe`를 실행하면 됩니다.
 
-### v0.72 주요 변경 사항
+### v0.8 주요 변경 사항
 
-- 애니메이션 계열의 품질 우선 업스케일을 위한 **Bubble AnimeScale SwinIR Small 2×** 추가
-- custom Vulkan attention MatMul을 사용하는 네이티브 **NCNN / Vulkan** SwinIR backend 추가
-- 이미지 가장자리와 타일 경계 품질을 개선하기 위한 overlap 기반 타일 처리 및 anchored edge 처리 적용
-- 영상 / 이미지 / 애니메이션 이미지의 기존 공통 AI 처리 경로에서 SwinIR 사용 가능
-- SwinIR은 속도보다 출력 품질을 우선하는 모델로, 다른 번들 AI 모델보다 처리 속도가 크게 느릴 수 있음
-- 기존 **Waifu2x CUNet**, Real-CUGAN, Real-ESRGAN / ESRGAN, DAT2, 日本語 지원, 빠른 설정 개선, 일괄 처리·타이밍·출력 기능 유지
+- 일반 동영상 입력의 **MOV / Apple ProRes 4444** 출력 지원
+- 기존 AI 업스케일, 최종 리사이즈, Source Timing / VFR, 사용자 지정 FPS 흐름과 일반 영상 → MOV 출력을 연동
+- MOV 호환 오디오 경로로 검증된 **AAC** 및 **PCM S16LE** 지원
+- 기존 투명 애니메이션 변환 유지: **Animated WebP / GIF / APNG → MOV / ProRes 4444**, 원본에 투명도가 있는 경우 알파 채널 보존
+- 기존 Waifu2x, Real-CUGAN, Real-ESRGAN / ESRGAN, DAT2, SwinIR, 일괄 처리·타이밍·이미지·애니메이션·영상 기능 유지
 
 ---
 
@@ -547,9 +560,10 @@ AI 업스케일은 출력 코덱이나 형식과 별개로 사용자가 직접 *
 - 인코딩 설정 프로파일 저장 및 재사용
 - Source Timing / VFR 보존
 - 사용자 지정 출력 FPS
-- 여러 영상 코덱 및 컨테이너 지원
+- 여러 영상 코덱 및 컨테이너 지원 (MOV / ProRes 4444 포함)
 - 이미지 출력
 - GIF / APNG / Animated WebP 출력
+- Animated WebP / GIF / APNG → 알파 보존 MOV / ProRes 4444 변환
 - 포터블 데이터 구조
 - 한국어 / English / 日本語 언어팩 및 사용자 직접 언어 선택
 - 항목별 내장 도움말
@@ -663,6 +677,7 @@ AI 처리 해상도
 - MKV
 - WebM
 - AVI
+- MOV
 
 사용 가능한 조합은 선택한 영상·오디오 코덱에 따라 달라질 수 있습니다.
 
@@ -679,6 +694,8 @@ AI 처리 해상도
 - PCM
 
 사용 가능한 조합은 선택한 출력 컨테이너에 따라 달라질 수 있습니다.
+
+MOV / ProRes 4444 출력에서는 검증된 **AAC** 및 **PCM S16LE** 오디오 경로를 사용할 수 있습니다.
 
 ---
 
@@ -708,6 +725,8 @@ AI 처리 해상도
 AI 처리를 사용하는 경우 디코딩된 각 프레임에 업스케일 처리를 수행한 뒤 최종 출력 크기와 애니메이션 형식으로 저장합니다.
 
 Source Timing을 사용할 경우 원본의 표시 타이밍을 유지합니다.
+
+Animated WebP, GIF, APNG 입력은 **MOV / ProRes 4444**로 변환할 수도 있으며, 원본 애니메이션에 투명도가 있는 경우 알파 채널을 보존합니다.
 
 ---
 
@@ -977,7 +996,7 @@ ELTAX Encoder 프로젝트 소스 코드에는 현재 별도의 오픈소스 라
 
 **[English](#eltax-encoder) | [한국어](#한국어) | 日本語**
 
-**現在のリリース: v0.72**
+**現在のリリース: v0.8**
 
 **ELTAX Encoder** は、**AIによる画像・動画アップスケーリングを中心に設計されたWindows向けポータブルメディア処理ツール**です。
 
@@ -990,14 +1009,13 @@ AIアップスケーリングは、出力コーデックやフォーマットと
 > インストーラーは不要です。  
 > 配布アーカイブ全体をフォルダーへ展開し、`EltaxEncoder.exe` を実行してください。
 
-### v0.72 の主な変更点
+### v0.8 の主な変更点
 
-- アニメ向けの品質重視アップスケーリング用に **Bubble AnimeScale SwinIR Small 2×** を追加
-- custom Vulkan attention MatMulを使用するネイティブ **NCNN / Vulkan** SwinIRバックエンドを追加
-- 画像端とタイル境界の品質を改善するため、overlapベースのタイル処理とanchored edge処理を採用
-- 動画・静止画・アニメーション画像の共通AI処理パイプラインからSwinIRを利用可能
-- SwinIRは速度より画質を優先するモデルで、他の同梱AIモデルより処理が大幅に遅くなる場合があります
-- 既存の **Waifu2x CUNet**、Real-CUGAN、Real-ESRGAN / ESRGAN、DAT2、日本語対応、Quick Settings改善、バッチ処理、タイミング、出力機能を維持
+- 一般動画入力の **MOV / Apple ProRes 4444** 出力に対応
+- 既存のAIアップスケーリング、最終リサイズ、Source Timing / VFR、Custom FPSのワークフローから動画をMOVへ出力可能
+- MOV互換オーディオとして検証済みの **AAC** および **PCM S16LE** 出力に対応
+- 既存の透過アニメーション変換を維持: **Animated WebP / GIF / APNG → MOV / ProRes 4444**。入力に透過情報がある場合はアルファチャンネルを保持
+- 既存のWaifu2x、Real-CUGAN、Real-ESRGAN / ESRGAN、DAT2、SwinIR、バッチ、タイミング、画像、アニメーション、動画機能を維持
 
 ---
 
@@ -1035,9 +1053,10 @@ AIアップスケーリングは、出力コーデックやフォーマットと
 - エンコード設定プロファイルの保存と再利用
 - Source Timing / VFR維持
 - カスタム出力FPS
-- 複数の動画コーデックとコンテナ
+- 複数の動画コーデックとコンテナ（MOV / ProRes 4444を含む）
 - 静止画出力
 - GIF / APNG / Animated WebP出力
+- Animated WebP / GIF / APNG → アルファ保持MOV / ProRes 4444変換
 - ポータブルデータ構成
 - 한국어 / English / 日本語 の言語パックと手動言語選択
 - カテゴリ別の内蔵ヘルプ
@@ -1151,6 +1170,7 @@ AI処理解像度
 - MKV
 - WebM
 - AVI
+- MOV
 
 利用可能な組み合わせは選択したコーデックによって異なります。
 
@@ -1167,6 +1187,8 @@ AI処理解像度
 - PCM
 
 利用可能な組み合わせは選択した出力コンテナによって異なります。
+
+MOV / ProRes 4444出力では、検証済みの **AAC** および **PCM S16LE** オーディオ経路を利用できます。
 
 ---
 
@@ -1196,6 +1218,8 @@ AI処理解像度
 AI処理を使用する場合、デコードされた各フレームをアップスケールした後、最終出力サイズとアニメーション形式で保存します。
 
 Source Timingを使用する場合、元の表示タイミングを維持します。
+
+Animated WebP、GIF、APNG入力は **MOV / ProRes 4444** に変換することもでき、入力アニメーションに透過情報がある場合はアルファチャンネルを保持します。
 
 ---
 
